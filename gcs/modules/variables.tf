@@ -1,4 +1,9 @@
-variable "project_id" {
+variable "gcs_bucket_name" {
+  description = "GCS Bucket name that is being created."
+  type        = string
+}
+
+variable "gcp_project_id" {
   description = "The ID of the project to create the bucket in."
   type        = string
 }
