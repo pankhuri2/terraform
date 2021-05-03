@@ -9,13 +9,13 @@ locals {
 }
 
 module "spanner_check" {
-    source       = "../modules"
-    suffix       = local.suffix
-    instance_id  = "spanner"
-    project_id   = "searce-academy"
-    display_name = "test_spanner_instance"
-    num_nodes    = 1
-    config       = "regional-us-central1"
+  source       = "../modules"
+  suffix       = local.suffix
+  instance_id  = "wesley-may"
+  project_id   = "searce-academy"
+  display_name = "test_spanner_instance"
+  num_nodes    = 1
+  config       = "regional-us-central1"
 
-  
+
 }

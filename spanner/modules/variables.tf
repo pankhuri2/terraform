@@ -35,5 +35,5 @@ variable "project_id" {
 variable "spanner_instance_timeout" {
    type         = string
    default      = "5m"
-   description  = ""How long a Google Spanner Instance creation operation is allowed to take before being considered a failure."
-}"
+   description  = "How long a Google Spanner Instance creation operation is allowed to take before being considered a failure."
+}
