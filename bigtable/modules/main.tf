@@ -11,11 +11,12 @@ resource "google_bigtable_instance" "dev_instance" {
   project         = var.project_id
 
   cluster {
-      cluster_id    = "instance_cluster_tf"
+      cluster_id    = "instance-cluster"
       num_nodes     = var.num_nodes
       storage_type  = var.storage_type
       zone          = var.cluster_zone
   }
+  deletion_protection = false
 
   labels  = {
       my_label   = "env-label"
