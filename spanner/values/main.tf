@@ -11,7 +11,7 @@ locals {
 module "spanner_check" {
   source       = "../modules"
   suffix       = local.suffix
-  instance_id  = "wesley-may"
+  instance_id  = "testcase_1"
   project_id   = "searce-academy"
   display_name = "test_spanner_instance"
   num_nodes    = 1
